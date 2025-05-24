@@ -9,7 +9,12 @@ export const Header = () => {
 
   //const [lightMode, setLightMode] = useState(JSON.parse(localStorage.getItem("lightmode")) || true);
 
-  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
+  // const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
+
+  const [darkMode, setDarkMode] = useState(() => {
+    const storedMode = localStorage.getItem("darkmode");
+    return storedMode !== null ? JSON.parse(storedMode) : false; // default to false (light mode)
+  })
 
   const navigate = useNavigate();
 
