@@ -1,15 +1,34 @@
+// module.exports = {
+//     content: ["./src/**/*.{html,js}"],
+//     darkMode: 'class',
+//     theme: {
+//         extend: {
+//             screens: {
+//                 'mobile': {
+//                     min: '340px',
+//                     max: '1200px'
+//                 }
+//             }
+//         },
+//     },
+//     plugins: [],
+// }
+
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
-    darkMode: 'class',
-    theme: {
-        extend: {
-            screens: {
-                'mobile': {
-                    min: '340 px',
-                    max: '1200 px'
-                }
-            }
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      screens: {
+        mobile: {
+          min: '340px',
+          max: '1200px',
         },
+      },
     },
-    plugins: [],
+  },
+  plugins: [],
 }
