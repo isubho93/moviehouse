@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
 import Logo from '../assets/Logo.png';
 
 
@@ -9,7 +10,7 @@ export const Header = () => {
 
   //const [lightMode, setLightMode] = useState(JSON.parse(localStorage.getItem("lightmode")) || true);
 
-   const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
+  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
 
   const navigate = useNavigate();
 
