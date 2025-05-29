@@ -9,7 +9,7 @@ export const Header = () => {
 
   //const [lightMode, setLightMode] = useState(JSON.parse(localStorage.getItem("lightmode")) || true);
 
-  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || true);
+  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
 
   const navigate = useNavigate();
 

@@ -6,7 +6,7 @@ import Pagenotfound from '../assets/images/Pagenotfound.png';
 export const PageNotFound = () => {
 
   useEffect(()=>{
-    document.title= `Page Not Found - Movie House`;
+    document.title= 'Page Not Found - Movie House';
   })
 
   return (
