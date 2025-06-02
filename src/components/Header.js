@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState,  } from 'react';
 import Logo from '../assets/Logo.png';
 
 
@@ -9,7 +9,7 @@ export const Header = () => {
 
   //const [lightMode, setLightMode] = useState(JSON.parse(localStorage.getItem("lightmode")) || true);
 
-  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
+  //const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkmode")) || false);
 
   const navigate = useNavigate();
 
@@ -30,15 +30,15 @@ export const Header = () => {
   // }, [lightMode]);
 
 
-  useEffect(() => {
-    localStorage.setItem("darkmode", JSON.stringify(darkMode));
+  // useEffect(() => {
+  //   localStorage.setItem("darkmode", JSON.stringify(darkMode));
 
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+  //   if (darkMode) {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+  // }, [darkMode]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
